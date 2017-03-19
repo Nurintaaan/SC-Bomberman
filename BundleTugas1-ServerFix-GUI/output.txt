@@ -1,0 +1,421 @@
+=======================
+TURN 0
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:1/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[  0  ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  1  ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[  2  ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 0
+P0: MOVE RIGHT
+P1: DROP BOMB
+P2: MOVE RIGHT
+P3: MOVE LEFT
+=======================
+TURN 1
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:1/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[     ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][1;B18]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[     ][  2  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 1
+P0: STAY
+P1: STAY
+P2: MOVE RIGHT
+P3: MOVE RIGHT
+=======================
+TURN 2
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:1/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[     ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][1;B17]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[     ][  2  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 2
+P0: MOVE UP
+P1: DROP BOMB
+P2: STAY
+P3: MOVE LEFT
+=======================
+TURN 3
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:1/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[     ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][1;B16]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[     ][  2  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 3
+P0: STAY
+P1: DROP BOMB
+P2: MOVE LEFT
+P3: MOVE RIGHT
+=======================
+TURN 4
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:1/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[     ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][1;B15]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[  2  ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 4
+P0: MOVE RIGHT
+P1: MOVE RIGHT
+P2: DROP BOMB
+P3: MOVE LEFT
+=======================
+TURN 5
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[     ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][1;B14]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B18][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 5
+P0: MOVE LEFT
+P1: MOVE LEFT
+P2: STAY
+P3: MOVE RIGHT
+=======================
+TURN 6
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[  0  ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  1  ][ B13 ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B17][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 6
+P0: MOVE UP
+P1: MOVE LEFT
+P2: DROP BOMB
+P3: MOVE LEFT
+=======================
+TURN 7
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[  0  ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  1  ][ B12 ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B16][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 7
+P0: DROP BOMB
+P1: MOVE DOWN
+P2: MOVE LEFT
+P3: MOVE RIGHT
+=======================
+TURN 8
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:0/1 Range:1 Alive 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[0;B18][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  1  ][ B11 ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B15][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 8
+P0: DROP BOMB
+P1: DROP BOMB
+P2: STAY
+P3: MOVE LEFT
+=======================
+TURN 9
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[0;B17][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][ F2  ][ F2  ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][ F2  ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B14][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 9
+P0: STAY
+P1: null
+P2: MOVE DOWN
+P3: MOVE RIGHT
+=======================
+TURN 10
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[0;B16][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][ F1  ][ F1  ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][ F1  ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[2;B13][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 10
+P0: STAY
+P1: null
+P2: MOVE UP
+P3: MOVE LEFT
+=======================
+TURN 11
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[0;B15][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[  2  ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ B12 ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 11
+P0: MOVE RIGHT
+P1: null
+P2: DROP BOMB
+P3: MOVE RIGHT
+=======================
+TURN 12
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:0/1 Range:1 Alive 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[ B14 ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[  2  ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ B11 ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][  3  ]
+-----------------------
+ACTION 12
+P0: MOVE RIGHT
+P1: null
+P2: STAY
+P3: MOVE LEFT
+=======================
+TURN 13
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:1/1 Range:1 Dead 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[ B13 ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[ F2  ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ F2  ][ F2  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 13
+P0: MOVE LEFT
+P1: null
+P2: null
+P3: STAY
+=======================
+TURN 14
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:1/1 Range:1 Dead 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[ B12 ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[ F1  ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ F1  ][ F1  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 14
+P0: MOVE LEFT
+P1: null
+P2: null
+P3: STAY
+=======================
+TURN 15
+PLAYER 4
+P0 ContohAI1 Bomb:0/1 Range:1 Alive 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:1/1 Range:1 Dead 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[ B11 ][  0  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[     ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+ACTION 15
+P0: MOVE RIGHT
+P1: null
+P2: null
+P3: STAY
+=======================
+TURN 16
+PLAYER 4
+P0 ContohAI1 Bomb:1/1 Range:1 Dead 0
+P1 ContohAI2 Bomb:1/1 Range:1 Dead 0
+P2 ContohAI3 Bomb:1/1 Range:1 Dead 0
+P3 DiamondAI Bomb:1/1 Range:1 Alive 0
+BOARD 11 13
+[ F2  ][ F2  ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][     ][     ]
+[ F2  ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[ XXX ][ XXX ][     ][ XPX ][ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][     ][ XXX ][ XXX ]
+[ XBX ][ ### ][ XBX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][ XBX ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[     ][ ### ][ XPX ][ ### ][ XPX ][ ### ][ XBX ][ ### ][ XPX ][ ### ][ XPX ][ ### ][     ]
+[ XXX ][     ][ XXX ][     ][ XXX ][ XBX ][ XPX ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ]
+[ XBX ][ ### ][ XPX ][ ### ][     ][ ### ][ XPX ][ ### ][     ][ ### ][ XBX ][ ### ][ XBX ]
+[ XXX ][ XXX ][     ][ XBX ][ XXX ][     ][ XXX ][     ][ XXX ][ XPX ][     ][ XXX ][ XXX ]
+[     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ][ ### ][ XXX ][ ### ][     ]
+[     ][     ][ XXX ][     ][ XXX ][ XXX ][ XBX ][ XXX ][ XXX ][     ][ XXX ][  3  ][     ]
+-----------------------
+GAME ENDS!
