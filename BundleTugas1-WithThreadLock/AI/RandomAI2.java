@@ -18,14 +18,15 @@ public class RandomAI2
 			}
 			
 			// Print a move
-			switch (random.nextInt(6)) {
-				case 0: System.out.println(">> MOVE RIGHT"); break;
-				case 1: System.out.println(">> MOVE LEFT"); break;
-				case 2: System.out.println(">> MOVE UP"); break;
-				case 3: System.out.println(">> MOVE DOWN"); break;
-				case 4: System.out.println(">> DROP BOMB"); break;
-				default: System.out.println(">> STAY"); break;
-			}
+			// switch (random.nextInt(6)) {
+			// 	case 0: System.out.println(">> MOVE RIGHT"); break;
+			// 	case 1: System.out.println(">> MOVE LEFT"); break;
+			// 	case 2: System.out.println(">> MOVE UP"); break;
+			// 	case 3: System.out.println(">> MOVE DOWN"); break;
+			// 	case 4: System.out.println(">> DROP BOMB"); break;
+			// 	default: System.out.println(">> STAY"); break;
+			// }
+			System.out.println(">> STAY"); break;
 		}
 	}
 }

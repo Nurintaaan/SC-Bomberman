@@ -1,5 +1,5 @@
-//TO-DO : simpen ada dimana si AI nya
-//TO-DO : 
+//TO-DO : bikin kalo deket sama powerUP
+//TO-DO : bikin bunuh kalo AI playernya mati
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -211,6 +211,7 @@ public class DiamondAI {
 	static Tiles[][] maps ;
 	static int selfId;
 	static int maxRange;
+	static ArrayList<Bomb> arrBomb;
 	
 	public static void main(String[] args) throws IOException{
 
@@ -220,6 +221,7 @@ public class DiamondAI {
 			String input = "";
 			Information information = new Information();
 			maxRange = 1;
+			arrBomb = new ArrayList<Bomb>();
 
 			int berapa = -7;
 			input = br.readLine();
@@ -238,6 +240,7 @@ public class DiamondAI {
 			}
 
 			Player self = information.getPlayers().get(selfId);
+			Player target = information.getPlayers().get(targetPlayer);
 
 			//so plis taro algoritma dfs yang iterative disini.. AYOK NGODING MALEM INI
 			int x = self.getX();
@@ -246,9 +249,26 @@ public class DiamondAI {
 			if(information.getPlayers().get(targetPlayer).getStatus().equals("Alive")){
 
 				if(!isFarFromBomb(x,y)){
-					flee(new Bomb(self.getRange(),8,x,y),x,y);
+					flee(arrBomb,x,y);
+				}else if(isNear(x,y,"+Power") || isNear(x,y,"+Bomb")){
+					System.out.println(isNear(x,y,"+Power") + "Near Power");
+					System.out.println(isNear(x,y,"+Bomb") + "Near Bomb");
+					if(isNear(x,y,"+Power")){
+						moveToPower(x,y,"+Power");
+					}else{
+						moveToPower(x,y,"+Bomb");
+					}
+					
 				}else if(isNearDestructible(x,y) && isFarFromBomb(x,y)){
 					System.out.println(">> DROP BOMB");
+					arrBomb.add(new Bomb(self.getRange(),8,x,y));
+					//terbalik ga ?
+					maps[x][y].setIsHaveWall(true);
+				}else if(isNear(target.getX(),target.getY(),"player")){
+					System.out.println(">> DROP BOMB");
+					arrBomb.add(new Bomb(self.getRange(),8,x,y));
+					//terbalik ga ?
+					maps[x][y].setIsHaveWall(true);
 				}else if(isCanMove(x,y-1) && isFarFromBomb(x,y-1)){
 					System.out.println(">> MOVE UP");		
 					self.setPosition(x,y-1);		
@@ -268,6 +288,10 @@ public class DiamondAI {
 				
 			
 			}else {
+				targetPlayer = random.nextInt(information.getPlayers().size());
+				while(targetPlayer == selfId){
+					targetPlayer = random.nextInt(information.getPlayers().size());
+				}
 				System.out.println(">> STAY");
 			}
 		}
@@ -380,56 +404,68 @@ public class DiamondAI {
 		}
 		return false;
 	}
-	public static void flee(Bomb bomb,int x, int y){
+
+	public static void flee(ArrayList<Bomb> bombs,int x, int y){
 		// DLS deep 1 LOL + MD
-		int tmpA = -99;
-		int tmpKn = -99;
-		int tmpKr = -99;
-		int tmpB = -99;
+		int tmpA = 0;
+		int tmpKn = 0;
+		int tmpKr = 0;
+		int tmpB = 0;
 		int xP = x;
 		int yP = y;
-		int xT = bomb.getX();
-		int yT = bomb.getY();
-		String move = "";
-		if(isCanMove(xP-1,yP)){
-			tmpKr = Math.abs(xP-1-xT) + Math.abs(yP-yT);
-			System.out.println(isBlocked(xP-1,yP, "LEFT")+ "AM I LEFT ?");
-			if(isBlocked(xP-1,yP, "LEFT")){
-				tmpKr -= 13;
-			}
-			System.out.println(tmpKr);
-			System.out.println(tmpKr + "heuristik kiri");
-			//if(move.equals("DOWN")) tmpA -=2;
+		int xT = 0;
+		int yT = 0;
+		if(isBlocked(xP-1,yP, "LEFT")){
+			tmpKr -= 5;
 		}
-		if(isCanMove(xP+1,yP)){
-			tmpKn = Math.abs(xP+1-xT) + Math.abs(yP-yT);
-			System.out.println(isBlocked(xP-1,yP, "RIGHT")+ "AM I RIGHT?");
-			if(isBlocked(xP+1,yP, "RIGHT")){
-				tmpKn -= 13;
-			}
-			System.out.println(tmpKn);
-			System.out.println(tmpKn + "heuristik kanan");
-			//if(move.equals("UP")) tmpB -=2;
+		if(isBlocked(xP+1,yP, "RIGHT")){
+			tmpKn -= 5;
 		}
-		if(isCanMove(xP,yP+1)){
-			tmpB = Math.abs(xP-xT) + Math.abs(yP-yT+1);
-			if(isBlocked(xP,yP+1, "DOWN")){
-				tmpB -= 13;
-			}
-			System.out.println(tmpB);
-			System.out.println(tmpB + "heuristik bawah");
-			//if(move.equals("LEFT")) tmpKn -=2;
+		if(isBlocked(xP,yP+1, "DOWN")){
+			tmpB -= 5;
 		}
-		if(isCanMove(xP,yP-1)){
-			tmpA = Math.abs(xP-xT) + Math.abs(yP-yT-1);
-			if(isBlocked(xP,yP-1, "UP")){
-				tmpA -= 13;
+		if(isBlocked(xP,yP-1, "UP")){
+			tmpA -= 5;
+		}
+		for(int i = 0; i < bombs.size(); i++){
+
+			xT = bombs.get(i).getX();
+			yT = bombs.get(i).getY();
+			String move = "";
+			if(isCanMove(xP-1,yP)){
+				tmpKr += Math.abs(xP-1-xT) + Math.abs(yP-yT);
+				System.out.println(isBlocked(xP-1,yP, "LEFT")+ "AM I LEFT ?");
+				
+
+				System.out.println(tmpKr);
+				System.out.println(tmpKr + "heuristik kiri");
+				//if(move.equals("DOWN")) tmpA -=2;
 			}
-			System.out.println(tmpA + "heuristik atas");
-			//if(move.equals("RIGHT")) tmpKr -=2;
+			if(isCanMove(xP+1,yP)){
+				tmpKn += Math.abs(xP+1-xT) + Math.abs(yP-yT);
+				System.out.println(isBlocked(xP-1,yP, "RIGHT")+ "AM I RIGHT?");
+				
+				System.out.println(tmpKn);
+				System.out.println(tmpKn + "heuristik kanan");
+				//if(move.equals("UP")) tmpB -=2;
+			}
+			if(isCanMove(xP,yP+1)){
+				tmpB += Math.abs(xP-xT) + Math.abs(yP-yT+1);
+
+				System.out.println(tmpB);
+				System.out.println(tmpB + "heuristik bawah");
+				//if(move.equals("LEFT")) tmpKn -=2;
+			}
+			if(isCanMove(xP,yP-1)){
+				tmpA += Math.abs(xP-xT) + Math.abs(yP-yT-1);
+				
+				System.out.println(tmpA + "heuristik atas");
+				//if(move.equals("RIGHT")) tmpKr -=2;
+			}
 		}
 		int hasil = Math.max(tmpA,Math.max(tmpB,Math.max(tmpKn,tmpKr)));
-		if(hasil <= 1 && xP != xT && yP != yT || hasil == -99){
+		if(hasil <= 1 && xP != xT && yP != yT || hasil == 0){
+			System.out.println("Masuk Sini coy jadinya dia stay");
 			System.out.println(">> STAY");
 			return;
 		}
@@ -451,6 +487,89 @@ public class DiamondAI {
 		}
 
 	}
+	public static void moveToPower(int x, int y, String type){
+		ArrayList<Obj> collection;
+
+		if(x+1 >= 0 && y >= 0 && x+1 < maps.length && y < maps[0].length){
+			collection = maps[x+1][y].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					System.out.println(">> MOVE RIGHT");
+					return ;
+				}
+			}
+			
+		}
+		if(x-1 >= 0 && y >= 0 && x-1 < maps.length && y < maps[0].length){
+			collection = maps[x-1][y].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					System.out.println(">> MOVE LEFT");
+					return ;
+				}
+			}
+		}
+		if(x >= 0 && y+1 >= 0 && x < maps.length && y+1 < maps[0].length){
+			collection = maps[x][y+1].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					System.out.println(">> MOVE DOWN");
+					return ;
+				}
+			}
+		}
+		if(x >= 0 && y-1 >= 0 && x < maps.length && y-1 < maps[0].length){
+			collection = maps[x][y-1].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					System.out.println(">> MOVE UP");
+					return ;
+				}
+			}
+		}
+		System.out.println(">> STAY");
+		return ;
+	}
+	public static boolean isNear(int x, int y, String type){
+
+		ArrayList<Obj> collection;
+
+		if(x+1 >= 0 && y >= 0 && x+1 < maps.length && y < maps[0].length){
+			collection = maps[x+1][y].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					return true;
+				}
+			}
+			
+		}
+		if(x-1 >= 0 && y >= 0 && x-1 < maps.length && y < maps[0].length){
+			collection = maps[x-1][y].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					return true;
+				}
+			}
+		}
+		if(x >= 0 && y+1 >= 0 && x < maps.length && y+1 < maps[0].length){
+			collection = maps[x][y+1].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					return true;
+				}
+			}
+		}
+		if(x >= 0 && y-1 >= 0 && x < maps.length && y-1 < maps[0].length){
+			collection = maps[x][y-1].getObject();
+			for(int i = 0; i < collection.size(); i++){
+				if(collection.get(i).getType().equals(type)){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
 	public static boolean isNearDestructible(int x, int y){
 
 		ArrayList<Obj> collection;
@@ -610,6 +729,8 @@ public class DiamondAI {
 							int bombCount = Integer.parseInt(""+subElement[j].charAt(subElement[j].length()-1));
 							Bomb bomb = new Bomb(bombPower, bombCount, i, berapa);
 							objects.add(bomb);
+							arrBomb.add(bomb);
+							maps[i][berapa].setIsHaveWall(true);
 						}else if(Character.isDigit(subElement[j].charAt(0))){
 							int index = Integer.parseInt(""+subElement[j].charAt(0));
 							objects.add(information.getPlayers().get(index));
